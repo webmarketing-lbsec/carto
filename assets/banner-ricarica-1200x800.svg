@@ -1,0 +1,14 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8ECF3"/>
+      <stop offset="1" stop-color="#FBE8F2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="135" y="130" width="930" height="540" rx="30" fill="#6E2142"/>
+  <rect x="195" y="200" width="810" height="145" rx="16" fill="#fff"/>
+  <text x="235" y="292" font-family="Montserrat, Arial" font-size="54" font-weight="800" fill="#6E2142">RICARICA WEB IMMEDIATA</text>
+  <text x="195" y="430" font-family="Montserrat, Arial" font-size="44" font-weight="500" fill="#FDD8E8">Sicura • Veloce • Sempre disponibile</text>
+  <text x="195" y="510" font-family="Montserrat, Arial" font-size="44" font-weight="700" fill="#FBC24C">5€ = 20 minuti di consulto</text>
+</svg>

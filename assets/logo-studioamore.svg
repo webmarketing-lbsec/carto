@@ -1,0 +1,17 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6E2142"/>
+      <stop offset="1" stop-color="#B44474"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="32" fill="url(#g)"/>
+  <g opacity="0.24">
+    <circle cx="1070" cy="95" r="52" fill="#fff"/>
+    <circle cx="140" cy="280" r="90" fill="#fff"/>
+  </g>
+  <path d="M172 138C172 118 188 102 208 102C228 102 244 118 244 138C244 173 208 196 208 196C208 196 172 173 172 138Z" fill="#F8C1D7"/>
+  <path d="M212 128C212 121 206 115 199 115C192 115 186 121 186 128C186 142 199 151 199 151C199 151 212 142 212 128Z" fill="#FFF"/>
+  <text x="290" y="158" font-family="Montserrat, Arial, sans-serif" font-size="78" font-weight="800" fill="#fff">Studio Amore</text>
+  <text x="294" y="214" font-family="Montserrat, Arial, sans-serif" font-size="33" font-weight="500" fill="#FFD6E7">Cartomanzia Telefonica • 5€ / 20 minuti</text>
+</svg>

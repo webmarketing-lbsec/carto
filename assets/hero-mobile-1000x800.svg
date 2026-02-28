@@ -1,0 +1,17 @@
+<svg width="1000" height="800" viewBox="0 0 1000 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B1630"/>
+      <stop offset="1" stop-color="#A53D6C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="800" fill="url(#bg)"/>
+  <g opacity="0.2" fill="#fff">
+    <circle cx="860" cy="110" r="90"/>
+    <circle cx="160" cy="620" r="120"/>
+  </g>
+  <path d="M415 304C415 261 450 226 493 226C536 226 571 261 571 304C571 380 493 429 493 429C493 429 415 380 415 304Z" fill="#F8C1D7"/>
+  <path d="M503 282C503 267 491 255 476 255C461 255 449 267 449 282C449 310 476 328 476 328C476 328 503 310 503 282Z" fill="#fff"/>
+  <text x="140" y="510" font-family="Montserrat, Arial, sans-serif" font-size="68" font-weight="800" fill="#fff">Studio Amore</text>
+  <text x="140" y="565" font-family="Montserrat, Arial, sans-serif" font-size="36" font-weight="500" fill="#FDE1ED">Cartomanzia telefonica</text>
+</svg>
