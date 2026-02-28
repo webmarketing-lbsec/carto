@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Amore | Cartomanzia Telefonica 5€ 20 minuti</title>
+  <meta name="description" content="Studio Amore: cartomanzia telefonica a basso costo. Consulti a 5€ per 20 minuti, prima volta 2€ per 10 minuti." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <img src="assets/logo-studioamore.svg" alt="Studio Amore logo" class="logo" />
+      <a class="phone-pill" href="tel:+3905080627">📞 050 80627</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source media="(max-width: 767px)" srcset="assets/hero-mobile-1000x800.svg" />
+      <img src="assets/hero-desktop-1440x520.svg" alt="Cartomante Studio Amore" class="hero-image" />
+    </picture>
+    <div class="hero-overlay container">
+      <h1>Studio Amore</h1>
+      <p class="slogan">La tua guida del cuore, ogni giorno, a piccoli prezzi.</p>
+      <div class="hero-cta-row">
+        <div class="cta-box"><strong>Prima volta:</strong> 2€ / 10 minuti</div>
+        <div class="cta-box"><strong>Tariffa base:</strong> 5€ / 20 minuti</div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section container two-col">
+      <div class="card">
+        <h2>Ricarica Web</h2>
+        <p>Acquista in autonomia il tuo credito online in pochi clic e inizia subito il consulto. Pagamento sicuro e attivazione immediata.</p>
+        <a href="#" class="btn">Ricarica adesso</a>
+      </div>
+      <div class="card soft">
+        <h2>Numero 899</h2>
+        <p>Preferisci la chiamata diretta? Il nostro servizio con tariffazione semplice è sempre disponibile dalle 8:00 alle 02:00.</p>
+        <p class="small">Informazioni complete su costi e condizioni nel footer del sito.</p>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container">
+        <h2 class="center">Stato Cartomanti in Tempo Reale</h2>
+        <div style="text-align: center;">
+          <iframe
+            id="pbxFrame"
+            src="https://pbx.cartomanzia.it/realtime400.php"
+            title="Cartomanti Online"
+            scrolling="no"
+            style="width:600px; max-width:100%; height:140px; border:0;"
+            frameborder="0">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="appointments">
+        <h2>Servizio Appuntamenti Personalizzati</h2>
+        <p>Vuoi parlare con una cartomante specifica? Prenota la tua fascia oraria e ricevi assistenza dedicata senza attese, anche in serata.</p>
+        <a href="tel:+3905080627" class="btn btn-outline">Prenota al 050 80627</a>
+      </div>
+    </section>
+
+    <section class="section container image-section">
+      <img src="assets/banner-promozioni-1200x800.svg" alt="Iscrizione promozioni Studio Amore" />
+      <div class="image-text">
+        <h2>Iscriviti alle Promozioni</h2>
+        <p>Ricevi offerte riservate, minuti omaggio e iniziative speciali dedicate ai nuovi clienti e ai consulti di coppia.</p>
+      </div>
+    </section>
+
+    <section class="section container content-block">
+      <h2>Cartomanzia Telefonica Affidabile, Empatica e Conveniente</h2>
+      <p>Studio Amore nasce per offrire consulti seri e chiari a un prezzo accessibile: <strong>5€ per 20 minuti</strong>. Ogni chiamata è pensata per aiutarti a fare luce su amore, relazioni, lavoro e scelte personali.</p>
+      <p>I nostri operatori selezionati lavorano con sensibilità e riservatezza. Nessuna promessa irrealistica: solo ascolto, esperienza e indicazioni pratiche per orientarti al meglio.</p>
+    </section>
+
+    <section class="section container image-section reverse">
+      <img src="assets/banner-ricarica-1200x800.svg" alt="Ricarica web Studio Amore" />
+      <div class="image-text">
+        <h2>Ricarica Web Sicura</h2>
+        <p>Con la ricarica online gestisci il tuo tempo in libertà: scegli l'importo, completa il pagamento e inizia il tuo consulto quando vuoi.</p>
+        <a href="#" class="btn">Vai alla Ricarica</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo-studioamore.svg" alt="Studio Amore" class="logo footer-logo" />
+        <p>Studioamore.it - Servizio di cartomanzia telefonica.</p>
+      </div>
+      <div>
+        <h3>Contatti</h3>
+        <p>Telefono: <a href="tel:+3905080627">050 80627</a></p>
+        <p>Orari: 8:00 - 02:00</p>
+      </div>
+      <div>
+        <h3>Trasparenza</h3>
+        <p>Tariffa promozionale: 2€ per 10 minuti (nuovi clienti).</p>
+        <p>Tariffa standard: 5€ per 20 minuti.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      window.addEventListener("message", function(e){
+        if(!e.data || e.data.type !== "pbxHeight") return;
+        var f = document.getElementById("pbxFrame");
+        if(!f) return;
+        var h = parseInt(e.data.height,10);
+        if(h && h > 80){
+          f.style.height = h + "px";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
