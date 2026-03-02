@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studioamore.it - Cartomanzia telefonica 5€ 20 minuti</title>
+  <style>
+    :root{--gold:#f0c46a;--bg:#090909;--panel:#15120c;--text:#f5ecd6}
+    *{box-sizing:border-box} body{margin:0;font-family:Georgia,serif;background:var(--bg);color:var(--text);line-height:1.4}
+    .container{width:min(1100px,92%);margin:0 auto}
+    .topbar{position:sticky;top:0;background:#000c;border-bottom:1px solid #3e2d11;backdrop-filter:blur(4px);z-index:20}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+    .logo{font-size:2rem;color:var(--gold);font-weight:700}
+    .phone{font-size:1.4rem;color:#fff}
+    .hero img{width:100%;display:block}
+    section{padding:56px 0;border-bottom:1px solid #2e2414}
+    h1,h2{color:var(--gold);margin-top:0}
+    .cta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:var(--panel);padding:22px;border:1px solid #4a3515;border-radius:14px}
+    .btn{display:inline-block;background:var(--gold);color:#191207;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+    .banner{width:100%;border-radius:14px;border:1px solid #4a3515}
+    footer{padding:40px 0;text-align:center;color:#dbcaa2}
+    @media (max-width:768px){.desktop{display:none}}
+    @media (min-width:769px){.mobile{display:none}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="logo">Studio Amore</div>
+      <div class="phone">☎ 050 80627</div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <img class="desktop" src="assets/hero-desktop-studioamore-1440x520.svg" alt="Studio Amore cartomanzia desktop"/>
+    <img class="mobile" src="assets/hero-mobile-studioamore-1000x800.svg" alt="Studio Amore cartomanzia mobile"/>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Cartomanzia telefonica sincera, chiara, immediata</h1>
+      <p>Con Studioamore.it puoi parlare con cartomanti selezionati ogni giorno, senza attese inutili e con una tariffa semplice: <strong>5€ per 20 minuti</strong>.</p>
+      <div class="cta-grid">
+        <div class="card"><h2>Prima volta?</h2><p>Offerta di benvenuto: <strong>2€ per 10 minuti</strong> per conoscere il servizio.</p><a class="btn" href="#">Attiva ora</a></div>
+        <div class="card"><h2>Ricarica web</h2><p>Ricarica online con procedura rapida e sicura. Ricevi conferma immediata.</p><a class="btn" href="#">Ricarica adesso</a></div>
+        <div class="card"><h2>Numero servizio</h2><p>Per parlare subito con un operatore chiama il numero unico:</p><p style="font-size:2rem;margin:8px 0;color:var(--gold)">050 80627</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Stato Cartomanti in tempo reale</h2>
+      <div style="text-align:center;">
+        <iframe id="pbxFrame" src="https://pbx.cartomanzia.it/realtime400.php" title="Cartomanti Online" scrolling="no" style="width:600px; max-width:100%; height:140px; border:0;" frameborder="0"></iframe>
+      </div>
+      <script>
+        (function(){
+          window.addEventListener("message", function(e){
+            if(!e.data || e.data.type !== "pbxHeight") return;
+            var f = document.getElementById("pbxFrame");
+            if(!f) return;
+            var h = parseInt(e.data.height,10);
+            if(h && h > 80){ f.style.height = h + "px"; }
+          });
+        })();
+      </script>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Servizio appuntamenti</h2>
+      <p>Vuoi parlare con una cartomante specifica? Prenota il tuo orario preferito: un consulente ti richiama e blocca la disponibilità del professionista scelto.</p>
+      <img class="banner" src="assets/banner-iscrizione-promozioni-1200x800.svg" alt="Iscrizione promozioni Studio Amore"/>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Un servizio pensato per chi cerca risposte concrete</h2>
+      <p>Amore, ritorni, dubbi sentimentali, scelte personali: ogni consulto è privato e orientato a darti indicazioni pratiche. Nessuna promessa irrealistica, ma ascolto autentico e lettura professionale.</p>
+      <img class="banner" src="assets/banner-ricarica-web-1200x800.svg" alt="Ricarica web Studio Amore"/>
+    </div>
+  </section>
+
+  <footer>
+    Studioamore.it · Cartomanzia telefonica 5€ 20 minuti · Numero servizio 050 80627
+  </footer>
+</body>
+</html>
