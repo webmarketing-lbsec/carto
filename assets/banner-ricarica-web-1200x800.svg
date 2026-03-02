@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <radialGradient id="bg" cx="55%" cy="25%" r="78%">
+      <stop offset="0%" stop-color="#7a5616"/>
+      <stop offset="48%" stop-color="#2a1b08"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="50" y="50" width="1100" height="700" rx="28" fill="none" stroke="#f0c46a" stroke-width="4"/>
+  <text x="100" y="220" fill="#f0c46a" font-size="72" font-weight="700" font-family="Georgia, serif">Ricarica Web Sicura</text>
+  <text x="100" y="320" fill="#fff0cf" font-size="45" font-family="Georgia, serif">Pagamento online immediato,</text>
+  <text x="100" y="380" fill="#fff0cf" font-size="45" font-family="Georgia, serif">accesso veloce al consulto.</text>
+  <rect x="100" y="520" width="500" height="110" rx="18" fill="#f0c46a"/>
+  <text x="145" y="594" fill="#1c1308" font-size="56" font-weight="700" font-family="Georgia, serif">Ricarica ora</text>
+</svg>
